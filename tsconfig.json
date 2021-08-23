@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "charset": "utf8",
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "lf",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "ES2019",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+  },
+}

@@ -1,0 +1,30 @@
+{
+  "name": "thereactbotts",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Wellington Rodrigues <ton.rodrigues@icloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc src/index.ts",
+    "start": "tsc-watch --project . --outDir ./dist --onSuccess \"nodemon ./dist/index.js\"",
+    "dev": "tsc-watch --project . --outDir ./dist --onSuccess \"nodemon -r dotenv/config --inspect ./dist/index.js dotenv_config_path=.env.local\""
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/node": "^16.7.1",
+    "@types/node-fetch": "^2.5.12",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "grammy": "^1.3.2",
+    "tsc-watch": "^4.5.0"
+  }
+}
